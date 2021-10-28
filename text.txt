@@ -12,6 +12,7 @@ SELECT * FROM `courses` WHERE `cfu` > 10
 
 SELECT *, TIMESTAMPDIFF(YEAR, date_of_birth, NOW()) AS age FROM `students` WHERE TIMESTAMPDIFF(YEAR, date_of_birth, NOW()) >= 30
 
+
 4  Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso di laurea (286)
 
 SELECT `id`, `name` FROM `courses` WHERE `period` LIKE 'I semestre' AND `year` = 1 
@@ -21,9 +22,11 @@ SELECT `id`, `name` FROM `courses` WHERE `period` LIKE 'I semestre' AND `year` =
 
 SELECT * FROM `exams` WHERE `date` = '2020-06-20' AND `hour` >= '14:00:00' 
 
+
 6  Selezionare tutti i corsi di laurea magistrale (38)
 
 SELECT * FROM `degrees` WHERE `level` LIKE 'magistrale' 
+
 
 7  Da quanti dipartimenti è composta l'università? (12)
 

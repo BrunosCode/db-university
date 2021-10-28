@@ -15,3 +15,4 @@ SELECT `date`, `hour`, `course_id`, AVG(vote) FROM `exams` INNER JOIN `exam_stud
 
 4. Contare quanti corsi di laurea ci sono per ogni dipartimento
 
+SELECT `department_id`, COUNT(`department_id`) AS total_courses FROM `degrees` GROUP BY `department_id` 
