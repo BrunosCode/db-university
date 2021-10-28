@@ -53,7 +53,7 @@ ORDER BY `degrees`.`name` ASC
 
 6. Selezionare tutti i docenti che insegnano nel Dipartimento di Matematica (54)
 
-SELECT DISTINCT `teachers`.`name` AS teacher, `departments`.`name` AS departments 
+SELECT DISTINCT `teachers`.`surname`, `teachers`.`name`, `departments`.`name` AS departments 
 FROM `teachers` 
 JOIN `course_teacher` 
 ON `teachers`.`id` = `course_teacher`.`teacher_id` 
